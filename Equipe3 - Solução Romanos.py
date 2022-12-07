@@ -9,7 +9,6 @@ romanos = {
 }
 soma = 0
 
-
 def transformar(romano):
 
     arrayRomano = []
@@ -29,12 +28,12 @@ num = input("Digite o número romano: ")
 arrayTeste = ["I", "V", "X", "L", "C", "D", "M"]
 
 cont = 0
+vai = True
 for letra in num:
     if letra.upper() in arrayTeste:
         cont += 1
 
-
 if cont == len(num):
     print(transformar(num.upper()))
 else:
-    print("Você não digitou um número romano válido")
+    print("Você não digitou um número romano")
